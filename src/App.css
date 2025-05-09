@@ -1,12 +1,30 @@
 .container {
-  min-width: 400px;
-  max-width: 90vw;
+  min-width: 300px;
+  max-width: 50vw;
   width: 90%;
-
   margin: auto;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background: white;
   border: "1px solid red";
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 95%;
+    padding: 0.75rem;
+    box-shadow: none;
+  }
+  body {
+    align-items: normal;
+  }
 }

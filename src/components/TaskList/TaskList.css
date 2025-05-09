@@ -19,3 +19,9 @@
   border: 2px solid #f0f0f0;
   cursor: pointer;
 }
+
+@media (max-width: 450px) {
+  .task-list {
+    height: 70vh;
+  }
+}
