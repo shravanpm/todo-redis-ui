@@ -1,0 +1,27 @@
+.task-input-container {
+  /* display: flex; */
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.task-input-container input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.task-input-container button {
+  background: #8b4513;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+.task-input {
+  display: flex;
+}

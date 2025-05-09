@@ -1,0 +1,21 @@
+.task-list {
+  overflow-y: auto;
+  padding-right: 8px;
+  height: 50vh;
+}
+
+.task-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.task-list::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background-color: #a0522d;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+  cursor: pointer;
+}
