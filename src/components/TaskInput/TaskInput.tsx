@@ -1,4 +1,4 @@
-import React, { useState, type ChangeEvent } from "react";
+import { useState, type ChangeEvent } from "react";
 import "./TaskInput.css";
 
 interface TaskInputProps {
@@ -21,8 +21,6 @@ const TaskInput = ({ onAdd }: TaskInputProps) => {
 
   return (
     <div className="task-input-container">
-      {/* <input value={value} onChange={handleChange} placeholder="New Note..." />
-      <button onClick={handleSubmit}>Add</button> */}
       <h2>
         <img
           src="https://res.cloudinary.com/dnwseb0gu/image/upload/v1746802096/notes_msuedp.png"
@@ -35,7 +33,7 @@ const TaskInput = ({ onAdd }: TaskInputProps) => {
         <input
           value={value}
           placeholder="New Note..."
-          onChange={(e) => setValue(e.target.value)}
+          onChange={handleChange}
           style={{ color: "black" }}
         />
         <button onClick={handleSubmit}>

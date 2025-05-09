@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { TaskList } from "./components/TaskList";
+import { TaskList } from "./components/TaskList/TaskList";
 import axios from "axios";
 import { config } from "./config/config";
 import io from "socket.io-client";
-import TaskInput from "./components/TaskInput";
+import TaskInput from "./components/TaskInput/TaskInput";
 const socket = io(config.baseUrl);
 import "./App.css";
 
